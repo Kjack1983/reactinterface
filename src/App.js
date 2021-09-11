@@ -24,8 +24,8 @@ const App = () => {
 		)
 	})
 
-	// we are retrieving that data and we are asking the 
-	// useCallback hook to monitor any changes that happends to that data.
+	// Retrieve and track the changes that are 
+	// happening to that data.
 	const fetchData = useCallback(() => {
 		fetch('./data.json')
 		.then(response => response.json())
@@ -35,7 +35,6 @@ const App = () => {
 		.catch(err => console.log('%c%s', 'color: #00e600', 'ERROR:', err));
 	}, []);
 
-	// ask useffect hook to track the fetching of data.
 	useEffect(() => {
 		fetchData();
 	}, [fetchData]);
