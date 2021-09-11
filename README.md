@@ -1,4 +1,4 @@
-# Appointment APP.
+# React interface APP.
 
 ## Branches
 
