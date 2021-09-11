@@ -40,9 +40,6 @@ const AddAppointment = ({ onSendAppointment, lastId }) => {
     })
   }
 
-
-  console.log('formData :>> ', formData);
-
   return (
     <div>
       <button onClick={() => { setToggleForm(!toggleForm) }}
